@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<h1 style="text-align: center;">Choose a poll to answer!</h1>
+<form>
+    <fieldset>
+{% if latest_question %}
+    <ul>
+    {% for question in latest_question %} <br>
+        <li><a href="{% url 'polls:detail' question.id %}/">{{ question.text_question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+    </fieldset>
+</form>
+</body>
+</html>

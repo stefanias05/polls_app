@@ -1,0 +1,33 @@
+body {
+ background: url("images/detail.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+
+
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 2px solid #3b3b4f;
+}
+
+label {
+display: inline-block;
+width: 100px;
+}
+
+input {
+ margin: 10px 0 0 0;
+ width: 100%;
+ display: inline-block;
+
+
+}
+

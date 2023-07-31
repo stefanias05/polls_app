@@ -1,0 +1,20 @@
+
+body {
+ margin: 0;
+ padding: 0;
+ background: url("images/resultss.png");
+ background-size: center;
+ background-attachment: fixed;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 200px;
+
+}

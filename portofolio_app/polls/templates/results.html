@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style2.css' %}">
+<div class ="container">
+<h1>Thanks for your vote!</h1>
+<ul>
+{% for choice in question.choice.all %}
+    <li>{{ choice.text_choice}} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+    <H2> Do you want to <a href="{% url 'polls:detail' question.id %}">Vote again?</a></H2>
+</div>
+</body>
+</html>

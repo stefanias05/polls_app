@@ -1,0 +1,22 @@
+li a {
+color: black;
+
+}
+body { background-image: url("images/background.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  }
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 2px solid #3b3b4f;
+}
